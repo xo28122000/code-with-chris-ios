@@ -76,6 +76,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        if(milliseconds <= 0){
+            return
+        }
+        
         let cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell
         
       
